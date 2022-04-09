@@ -1,14 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+const App = () => {
+  const [count, setCount] = useState(0);
+
   return (
     <View style={styles.container}>
+      {/* general */}
       <Text style={styles.text}>Kawsar</Text>
       <Text style={styles.text}>Biya Koirala</Text>
       <Text style={styles.text}>Tor bondhura sobai kore felteche</Text>
-      <StatusBar style="auto" />
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+      <hr />
+      {/* state */}
+      <Button
+        onPress={() => setCount(count + 1)}
+        title="Click me!"
+      />
+      <Text>You clicked {count} times</Text>
+
     </View>
   );
 }
@@ -24,3 +36,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
   }
 });
+
+export default App;
