@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "tp-practise",
+    "slug": "tp-practise",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "tp-practise"
+}
