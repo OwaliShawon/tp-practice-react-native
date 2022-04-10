@@ -34,6 +34,14 @@ const App = () => {
       <Text style={styles.text}>Hello</Text>
       <Text style={styles.text}>Style</Text>
       <Text style={styles.text}>ON ME</Text>
+      {/* flexbox */}
+      <Text style={styles.title}>flexbox</Text>
+      <View style={styles.containerFlex}>
+        <View style={styles.redbox} />
+        <View style={styles.bluebox} />
+        <View style={styles.blackbox} />
+      </View>
+      {/*  */}
 
     </View>
   );
@@ -54,7 +62,44 @@ const styles = StyleSheet.create({
     color: 'blue',
     fontSize: 30,
     margin: 10,
-  }
+  },
+  redbox: {
+    width: 100,
+    height: 100,
+    backgroundColor: 'red'
+  },
+  bluebox: {
+    width: 100,
+    height: 100,
+    backgroundColor: 'blue'
+  },
+  blackbox: {
+    width: 100,
+    height: 100,
+    backgroundColor: 'black'
+  },
+  containerFlex: {
+    flex: 2,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 10,
+  },
+  redbox: {
+    width: 100,
+    height: 100,
+    backgroundColor: 'red'
+  },
+  bluebox: {
+    width: 100,
+    height: 100,
+    backgroundColor: 'blue'
+  },
+  blackbox: {
+    width: 100,
+    height: 100,
+    backgroundColor: 'black'
+  },
 });
 
 export default App;
