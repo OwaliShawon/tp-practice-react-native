@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
+import ButtonsExample from './components/ButtonsExample';
 import Greetings from './components/Greetings';
 import HttpExample from './components/HttpExample';
 import Inputs from './components/Inputs';
@@ -57,6 +58,9 @@ const App = () => {
       {/*http example */}
       <Text style={styles.title}>http ex</Text>
       <HttpExample></HttpExample>
+      {/*Button example */}
+      <Text style={styles.title}>Button example</Text>
+      <ButtonsExample></ButtonsExample>
 
     </View>
   );
