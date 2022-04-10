@@ -4,8 +4,10 @@ import ButtonsExample from './components/ButtonsExample';
 import Greetings from './components/Greetings';
 import HttpExample from './components/HttpExample';
 import Inputs from './components/Inputs';
+import LayoutAnimation from './components/LayoutAnimation';
 import List from './components/List';
 import ScrollViewExample from './components/ScrollViewExample';
+
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -61,6 +63,9 @@ const App = () => {
       {/*Button example */}
       <Text style={styles.title}>Button example</Text>
       <ButtonsExample></ButtonsExample>
+      {/*Layout Animation */}
+      <Text style={styles.title}>Layout Animation</Text>
+      <LayoutAnimation></LayoutAnimation>
 
     </View>
   );
