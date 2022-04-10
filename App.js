@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import Greetings from './components/Greetings';
+import Inputs from './components/Inputs';
+import List from './components/List';
+import ScrollViewExample from './components/ScrollViewExample';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -41,7 +44,15 @@ const App = () => {
         <View style={styles.bluebox} />
         <View style={styles.blackbox} />
       </View>
-      {/*  */}
+      {/*ListView  */}
+      <Text style={styles.title}>List View</Text>
+      <List></List>
+      {/* Inputs */}
+      <Text style={styles.title}>Input</Text>
+      <Inputs></Inputs>
+      {/* ScrollViewExample */}
+      <Text style={styles.title}>ScrollViewExample</Text>
+      <ScrollViewExample></ScrollViewExample>
 
     </View>
   );
