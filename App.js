@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import Greetings from './components/Greetings';
+import HttpExample from './components/HttpExample';
 import Inputs from './components/Inputs';
 import List from './components/List';
 import ScrollViewExample from './components/ScrollViewExample';
@@ -53,6 +54,9 @@ const App = () => {
       {/* ScrollViewExample */}
       <Text style={styles.title}>ScrollViewExample</Text>
       <ScrollViewExample></ScrollViewExample>
+      {/*http example */}
+      <Text style={styles.title}>http ex</Text>
+      <HttpExample></HttpExample>
 
     </View>
   );
